@@ -1,3 +1,4 @@
 # L2_Java 
   
- Ejercicios propuestos en el libro **Beginning Java Programming**
+
+ Ejercicios de todo tipo en **Java**
