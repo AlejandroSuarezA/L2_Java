@@ -15,14 +15,15 @@
 
 **Clase** `Estacion`
 
-##ATRIBUTOS
+
+###ATRIBUTOS
 * `id` = identificador de la estación
 * `direccion` = dirección de la estación
 * `numeroAnclajes` = número de anclajes de la estación
 * `anclajes[numeroAnclajes]` = array donde almacenarás las bicicletas que se
    anclen a la estación
 
-##MÉTODOS
+###MÉTODOS
 * `consultarEstacion()` muesta un mensaje con id, direccion y numeroAnclajes
 * `anclajesLibres()` devuelve la cantidad de anclajes libres
 * `consultarAnclajes()` recorre el array anclajes y muestra el id de la bici anclada o si está libre
@@ -38,13 +39,17 @@
 * `mostrarBicicleta(bicicleta, numeroAnclaje)` muestra un mensaje con el id de la bici y el número de anclaje donde estaba.
 * `generarAnclaje()` devuelve una posición al azar entre el número de anclajes. Utiliza `ThreadLocalRandom.current()`
 
+
 **Clase** `Bicicleta`
 
-##ATRIBUTOS
+
+###ATRIBUTOS
 * `id` = identificador de la bicicleta: un número de tres digitos.
+
 
 **Clase** `TarjetaUsuario`
 
-##ATRIBUTOS
+
+###ATRIBUTOS
 * `id` = identificador de la tajeta: un número de nueve digitos.
 * `activada` = valor lógico que indica si la tarjeta está activada o no. 
