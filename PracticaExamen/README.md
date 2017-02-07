@@ -30,10 +30,10 @@
 * `mostrarAnclaje(bicicleta,  numeroAnclaje)` muestra un mensaje con el id de la bicicleta anclada y en qué anclaje se ha anclado
 * `leerTarjetaUsuario(tarjetaUsuario)` comprueba si la tarjeta de usuario está activada
 * `retirarBicicleta(tarjetaUsuario)`
-⋅⋅* si la tarjeta de usuario está activada retira una bici del anclaje y muestra
-      su información en pantalla llamando a `mostrarBicicleta(bicicleta, numeroAnclaje)`
-⋅⋅* para simular que un usuario/a del servicio ancla una bici, debes generar
-      una posición al azar entre los anclajes y eliminar esa bici con el método `generarAnclaje()`
-⋅⋅* para eliminar una bici del `array` debes poner esa posicion del array a `null`.
+   * si la tarjeta de usuario está activada retira una bici del anclaje y muestra
+   su información en pantalla llamando a `mostrarBicicleta(bicicleta, numeroAnclaje)`
+   * para simular que un usuario/a del servicio ancla una bici, debes generar
+   una posición al azar entre los anclajes y eliminar esa bici con el método `generarAnclaje()`
+   * para eliminar una bici del `array` debes poner esa posicion del array a `null`.
 * `mostrarBicicleta(bicicleta, numeroAnclaje)` muestra un mensaje con el id de la bici y el número de anclaje donde estaba.
 * `generarAnclaje()` devuelve una posición al azar entre el número de anclajes. Utiliza `ThreadLocalRandom.current()`
