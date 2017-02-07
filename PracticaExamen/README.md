@@ -13,7 +13,7 @@
    construir una funcion `main()` para testear cada clase por separado.   
 
 
-**Clase** `Estacion`
+####**Clase** `Estacion`
 
 
 ###ATRIBUTOS
@@ -40,14 +40,14 @@
 * `generarAnclaje()` devuelve una posición al azar entre el número de anclajes. Utiliza `ThreadLocalRandom.current()`
 
 
-**Clase** `Bicicleta`
+####**Clase** `Bicicleta`
 
 
 ###ATRIBUTOS
 * `id` = identificador de la bicicleta: un número de tres digitos.
 
 
-**Clase** `TarjetaUsuario`
+####**Clase** `TarjetaUsuario`
 
 
 ###ATRIBUTOS
