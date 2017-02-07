@@ -16,11 +16,11 @@
 **Clase** `Estacion`
 
 ##ATRIBUTOS
-   * `id` = identificador de la estación
-   * `direccion` = dirección de la estación
-   * `numeroAnclajes` = número de anclajes de la estación
-   * `anclajes[numeroAnclajes]` = array donde almacenarás las bicicletas que se
-      anclen a la estación
+    * `id` = identificador de la estación
+    * `direccion` = dirección de la estación
+    * `numeroAnclajes` = número de anclajes de la estación
+    * `anclajes[numeroAnclajes]` = array donde almacenarás las bicicletas que se
+       anclen a la estación
 
 ##MÉTODOS
 * `consultarEstacion()` muesta un mensaje con id, direccion y numeroAnclajes
