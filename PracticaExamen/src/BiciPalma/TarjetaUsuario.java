@@ -6,7 +6,7 @@ public class TarjetaUsuario {
 	
 	public TarjetaUsuario(String id, Boolean estado){
 		this.id = id;
-		this.activada = activada;
+		this.activada = estado;
 	}
 	
 	public void setActivada(){
