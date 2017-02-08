@@ -60,7 +60,7 @@ public class Estacion {
 
 		for (int i = 0; i < getAnclajes().length; i++) {
 			if (getAnclaje(i) == null) {
-				anclajes[i] = bicicleta;
+				getAnclajes()[i] = bicicleta;
 				mostrarAnclaje(bicicleta, i);
 				break;
 			}
