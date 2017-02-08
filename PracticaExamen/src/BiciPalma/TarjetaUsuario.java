@@ -22,5 +22,4 @@ public class TarjetaUsuario {
 	public Boolean isActivada(){
 		return this.activada;
 	}
-
 }
