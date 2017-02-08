@@ -7,7 +7,7 @@ public class Estacion {
 	private int id = 0;
 	private String direccion = "";
 	private int numeroAnclajes = 0;
-	private Bicicleta[] anclajes;
+	private Bicicleta[] anclajes = null;
 
 	// constructores
 	public Estacion(int id, String direccion, int anclaje) {
