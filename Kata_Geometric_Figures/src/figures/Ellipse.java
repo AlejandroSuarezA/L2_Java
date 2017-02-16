@@ -39,6 +39,7 @@ public class Ellipse extends Geometric_shape {
 	}
 	
 	//Override area method
+	@Override
 	public double area(){
 		return PI * getSemi_axis_a() * getSemi_axis_b();
 	}
