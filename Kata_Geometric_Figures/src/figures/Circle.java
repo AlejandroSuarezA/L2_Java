@@ -30,6 +30,7 @@ public class Circle extends Geometric_shape {
 	
 	
 	//Override area method from superClass
+	@Override
 	public double area(){
 		return PI * Math.pow(getRadius(), 2);
 	}
