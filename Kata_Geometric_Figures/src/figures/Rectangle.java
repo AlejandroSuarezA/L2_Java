@@ -46,6 +46,7 @@ public class Rectangle extends Geometric_shape {
 	
 	
 	//Override area method from Geometric_shape
+	@Override
 	public double area(){
 		return getSide_a() * getSide_b();
 	}
