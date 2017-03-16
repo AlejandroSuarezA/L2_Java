@@ -39,7 +39,13 @@ public class DNITest {
 	}
 
 	@Test
-	public void DniIncorrecto() {
+	public void DniCorrectoLector() {
+
+		assertTrue(Validador.leerDocumento(DniCorrecto[1]));
+
+		assertTrue(Validador.leerDocumento(DniCorrecto[2]));
+
+		assertTrue(Validador.leerDocumento(DniCorrecto[3]));
 
 	}
 
