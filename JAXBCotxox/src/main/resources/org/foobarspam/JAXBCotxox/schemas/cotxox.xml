@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emt:carrera xmlns:emt="https://org.foobarspam.cotxox" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://api.mobipalma.mobi/docs/ CotxoxSchema.xsd ">
+  <tarjetaCredito>627842562</tarjetaCredito>
+  <origen>Mi casa</origen>
+  <destino>Tu casa</destino>
+  <distancia>56.8</distancia>
+  <tiempoEsperadoMinutos>21</tiempoEsperadoMinutos>
+  <tiempoCarrera>7</tiempoCarrera>
+  <costeEsperado>155.4</costeEsperado>
+  <costeTotal>62.7</costeTotal>
+  <propina>0.2</propina>
+  <conductor>
+    <nombre>Jesus</nombre>
+    <matricula>123456789</matricula>
+    <modelo>Mobilette</modelo>
+    <valoraciones>9 9</valoraciones>
+    <ocupado>false</ocupado>
+    <valoracionMedia></valoracionMedia>
+  </conductor>
+</emt:carrera>
