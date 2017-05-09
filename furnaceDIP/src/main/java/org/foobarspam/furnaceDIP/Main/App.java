@@ -1,10 +1,13 @@
 package org.foobarspam.furnaceDIP.Main;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
 import org.foobarspam.furnaceDIP.hardware.GasHeater;
 import org.foobarspam.furnaceDIP.hardware.Regulator;
 import org.foobarspam.furnaceDIP.hardware.RemoteCommandSensor;
 import org.foobarspam.furnaceDIP.interfaces.Heater;
 import org.foobarspam.furnaceDIP.interfaces.Thermometer;
+import org.foobarspam.furnaceDIP.inyector.ReguladorModule;
 import org.foobarspam.furnaceDIP.otherstuff.Jedi;
 import org.foobarspam.furnaceDIP.types.RoomTemperature;
 
@@ -18,19 +21,19 @@ public class App
     {
     	final double minTemp = 15.0;
         final double maxTemp = 21.0;
-        
-        RoomTemperature temperature = new RoomTemperature(15);
-        Heater heater = new GasHeater();
-        Thermometer thermometer = new RemoteCommandSensor();
-        
-        Regulator regulator = new Regulator();
+
+        Injector injector = Guice.createInjector(new ReguladorModule());
+
+        Regulator regulator = injector.getInstance(Regulator.class);
+        regulator.setMaxTemp(maxTemp);
+        regulator.setMinTemp(minTemp);
         
         System.out.println( "Arrancando..." );
-        regulator.regulate(thermometer, heater, minTemp, maxTemp, temperature);
+        regulator.regulate();
         
         Jedi yoda = new Jedi();
         System.out.println( "\nArrancando a Yoda: " );
-        regulator.regulate(thermometer, yoda, minTemp, maxTemp, temperature);
+        regulator.regulate();
         yoda.speak();
     }
 }
